@@ -9,7 +9,7 @@ This repository contains an end-to-end Data Science and Machine Learning pipelin
 
 ## The Data & Preprocessing
 The data stems from "Estimation of obesity levels based on eating habits and physical condition" by Palechor & De la Hoz Manotas, and consists of patient records from Mexico, Peru and Colombia, containing dietary variables (e.g., vegetable consumption, high-calorie food intake) and lifestyle habits (e.g., physical activity, transportation mode).
-* **Data Cleaning & Feature Engineering:** Character variables were transformed into factors, sparse categories were collapsed (e.g., CALC, MTRANS), and several questionnaire-based variables (FCVC, NCP, CH2O, FAF, TUE) were rounded back to their nearest valid response category. This step was performed because approximately 77% of the dataset consists of SMOTE-generated synthetic observations, which introduce interpolated decimal values for originally discrete questionnaire responses (e.g., Never, Sometimes, Always).
+* **Data Cleaning & Feature Engineering:** Character variables were transformed into factors, sparse categories were collapsed (e.g., CALC, MTRANS, NCP_category), and several questionnaire-based variables (FCVC, NCP, CH2O, FAF, TUE) were rounded back to their nearest valid response category. This step was performed because approximately 77% of the dataset consists of SMOTE-generated synthetic observations, which introduce interpolated decimal values for originally discrete questionnaire responses (e.g., Never, Sometimes, Always).
 * **Target Variable:** Formulated as a binary classification problem (`Is_Obese`: Yes/No) and later explored as a multiclass problem (`NObeyesdad`).
 
 ## Methodology & Modeling Approach
