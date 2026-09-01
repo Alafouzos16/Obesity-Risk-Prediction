@@ -443,6 +443,7 @@ lime_explainer <- lime(
 )
 
 # Explaining the same Patient No.1 used in the SHAP section, for direct comparison
+set.seed(123)
 lime_explanation <- lime::explain(
   x = patient_1,
   explainer = lime_explainer,
